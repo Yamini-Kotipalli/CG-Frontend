@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes</title>
+
+    <style>
+        /* Changes the button when the mouse hovers over it */
+        button:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* Changes the textbox when focused */
+        input:focus {
+            background-color: lightyellow;
+            border: 2px solid blue;
+        }
+
+        /* Selects the first list item */
+        li:first-child {
+            color: red;
+        }
+
+        /* Selects the last list item */
+        li:last-child {
+            color: green;
+        }
+
+        /* Selects the second list item */
+        li:nth-child(2) {
+            color: blue;
+        }
+
+        /* Changes the accent color of checked controls */
+        input:checked {
+            accent-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Pseudo-class Practice</h2>
+
+    <button>Hover Over Me</button>
+
+    <br><br>
+
+    <input type="text" placeholder="Enter your name">
+
+    <h3>Programming Languages</h3>
+
+    <ul>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+
+    <input type="checkbox" id="terms">
+    <label for="terms">I agree to the terms</label>
+
+</body>
+</html>

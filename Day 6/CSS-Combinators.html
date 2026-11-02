@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+
+    <style>
+        .container p{
+            color: blue;
+        }
+
+        .container > p{
+            color: red;
+        }
+
+        h2 + p {
+            color: green;
+        }
+
+        h2 ~ p {
+            color: purple;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>Direct paragraph 1</p>
+
+        <section>
+            <p>Nested paragraph 2</p>
+        </section>
+
+        <p>Direct paragraph 3</p>
+    </div>
+
+    <h2>Combinator Practice</h2>
+    <p>Adjacent paragraph 1</p>
+    <p>Following paragraph 2</p>
+
+</body>
+</html>

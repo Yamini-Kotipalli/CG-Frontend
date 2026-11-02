@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements</title>
+
+    <style>
+        /* Insert a star before the heading */
+        h2::before {
+            content: "★ ";
+            color: orange;
+        }
+
+        /* Insert a check mark after each paragraph */
+        p::after {
+            content: " ✓";
+            color: green;
+        }
+
+        /* Style the first letter */
+        .intro::first-letter {
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* Style the first rendered line */
+        .intro::first-line {
+            color: blue;
+        }
+
+        /* Style the placeholder */
+        input::placeholder {
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Pseudo-elements</h2>
+
+    <p class="intro">
+        Welcome to CSS learning.
+        We are learning pseudo-elements.
+    </p>
+
+    <p>HTML is easy to learn.</p>
+
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>

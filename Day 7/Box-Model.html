@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .card {
+            width: 250px;
+            height: 150px;
+
+            padding: 20px;
+            border: 5px solid darkblue;
+            margin: 30px;
+
+            background-color: skyblue;
+        }
+
+        .second-card {
+            width: 250px;
+            padding: 20px;
+            border: 5px solid green;
+            margin: 30px;
+            box-sizing: border-box;
+            background-color: lightgreen;
+        }
+
+        .outline-box {
+            outline: 3px dashed red;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <div class="card">
+        <h2>First Card</h2>
+        <p>Normal box sizing</p>
+    </div>
+
+    <div class="second-card">
+        <h2>Second Card</h2>
+        <p>Border-box sizing</p>
+    </div>
+
+    <p class="outline-box">This paragraph has an outline.</p>
+
+</body>
+</html>

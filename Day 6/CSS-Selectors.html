@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector:
+           Selects all paragraph elements */
+        p{
+            color: blue;
+        }
+
+        /* Class Selector:
+           Selects all elements with class="title" */
+        .title{
+            color:green;
+        }
+
+         /* ID Selector:
+           Selects the element with id="special" */
+        #special {
+            color: red;
+        }
+
+        /* ID Selector:
+           Selects the element with id="special" */
+        *{
+            font-family: Arial, sans-serif;
+        }
+
+        /* Grouping Selector:
+           Applies the same styles to h2 and h3 */
+        h2, h3{
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Class selector example -->
+    <h1 class="title">Hello World</h1>
+
+     <!-- Element selector example: blue paragraph -->
+    <p>This ia a Paragraph.</p>
+
+    <!-- ID selector overrides the element selector -->
+    <p id="special">This is another paragraph</p>
+
+    <!-- Grouping selector example -->
+    <h2>Grouping Selector</h2>
+    <h3>Another Grouped Heading</h3>
+    
+</body>
+</html>
