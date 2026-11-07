@@ -1,0 +1,287 @@
+/* ==============================
+   1. BASE STYLES
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ==============================
+   2. BODY STYLING
+============================== */
+
+body {
+    background-color: #0f141c;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 30px;
+}
+
+
+/* ==============================
+   3. CARD CONTAINER
+============================== */
+
+.card-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    max-width: 1100px;
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==============================
+   4. COMMON CARD STYLING
+============================== */
+
+.card {
+    width: 280px;
+
+    padding: 14px;
+
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ==============================
+   5. CARD BACKGROUND COLORS
+============================== */
+
+.bg-blue {
+    background-color: #c9fff7;
+    color: #2c424f;
+}
+
+.bg-white {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+/* ==============================
+   6. FEATURED CENTER CARD
+============================== */
+
+.featured {
+    transform: translateY(-12px) rotate(2deg);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ==============================
+   7. IMAGE WRAPPER
+============================== */
+
+.image-wrapper {
+    width: 100%;
+    height: 125px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+
+/* ==============================
+   8. IMAGE STYLING
+============================== */
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+/* ==============================
+   9. HEADING STYLING
+============================== */
+
+h2 {
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    color: #1b2d38;
+}
+
+
+/* Pink heading */
+
+.text-pink {
+    color: #e60067;
+}
+
+
+/* ==============================
+   10. PARAGRAPH STYLING
+============================== */
+
+p {
+    font-size: 0.72rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    opacity: 0.9;
+}
+
+
+/* ==============================
+   11. COMMON BUTTON STYLING
+============================== */
+
+.btn {
+    border: none;
+
+    padding: 8px 25px;
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease,
+        transform 0.2s ease;
+}
+
+
+/* ==============================
+   12. DARK BUTTON
+============================== */
+
+.btn-dark {
+    background-color: #14191f;
+    color: #ffffff;
+}
+
+.btn-dark:hover {
+    background-color: #344253;
+}
+
+
+/* ==============================
+   13. PINK BUTTON
+============================== */
+
+.btn-pink {
+    background-color: #e60067;
+    color: #ffffff;
+}
+
+.btn-pink:hover {
+    background-color: #c20056;
+}
+
+
+/* ==============================
+   14. BUTTON ACTIVE EFFECT
+============================== */
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+
+/* ==============================
+   15. CARD HOVER EFFECT
+============================== */
+
+.card:not(.featured):hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Featured card hover */
+
+.featured:hover {
+    transform: translateY(-20px) rotate(0deg);
+}
+
+
+/* ==============================
+   16. IMAGE HOVER EFFECT
+============================== */
+
+.card:hover .image-wrapper img {
+    transform: scale(1.1);
+}
+
+
+/* ==============================
+   17. RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 968px) {
+
+    .card-container {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .featured {
+        transform: none;
+    }
+
+    .featured:hover {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+/* Mobile screens */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}

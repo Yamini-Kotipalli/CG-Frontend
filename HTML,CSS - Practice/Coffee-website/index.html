@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #3b171a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #2b1113;
+            border-radius: 12px;
+            padding: 40px 60px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Navbar Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #d4a373;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #e5c1a7;
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffb703;
+        }
+
+        /* Hero Content Styles */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 550px;
+        }
+
+        .hero-text .subtitle {
+            font-family: 'Pacifico', cursive;
+            color: #d4a373;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: #c3a492;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #ffb703;
+            color: #2b1113;
+            border: 2px solid #ffb703;
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: #ffb703;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #ffffff;
+            color: #2b1113;
+        }
+
+        /* Hero Image Styles */
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 968px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero-text {
+                max-width: 100%;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header / Navigation -->
+        <header>
+            <div class="logo">
+                <span class="logo-icon"></span>
+                Coffee
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Hero Section -->
+        <main class="hero">
+            <div class="hero-text">
+                <div class="subtitle">Best Coffee</div>
+                <h1>Make your day great with our special coffee!</h1>
+                <p>Welcome to our coffee paradise where every bean tells a story and every cup sparks joy.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                    <a href="#" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Replace with your actual cut-out coffee cup image path -->
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/022/993/484/small_2x/coffee-latte-with-creamy-and-foam-in-cup-and-latte-art-shape-on-dark-wooden-table-with-coffee-beans-decoration-calm-and-relax-coffee-relaxation-time-hot-beverage-with-generative-ai-photo.jpeg" alt="Special Coffee Cup Splash">
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
